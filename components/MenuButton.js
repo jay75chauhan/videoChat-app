@@ -40,7 +40,7 @@ export default function MenuButton({ navigation }) {
           >
             <FontAwesome name={item.name} size={25} color="#efefef" />
           </TouchableOpacity>
-          <Text style={tw`text-gray-300 text-sm pt-2`}>{item.title}</Text>
+          <Text style={tw`text-gray-300 text-xs pt-2`}>{item.title}</Text>
         </View>
       ))}
     </View>

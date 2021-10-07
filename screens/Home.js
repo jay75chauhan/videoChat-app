@@ -9,7 +9,7 @@ import SearchBar from "../components/SearchBar";
 export default function Home({ navigation }) {
   return (
     <View style={[tw` p-5`, { backgroundColor: "#1c1c1c" }]}>
-      <SafeAreaView style={tw`h-full`}>
+      <SafeAreaView style={[tw`h-full`]}>
         <Header />
         <SearchBar />
         <MenuButton navigation={navigation} />
