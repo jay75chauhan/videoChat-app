@@ -20,7 +20,7 @@ export default function StartMeeting({
           style={tw`text-xl text-white`}
           value={name}
           placeholder="Enter name"
-          onChange={(text) => setName(text)}
+          onChangeText={(text) => setName(text)}
           placeholderTextColor="#767476"
         />
       </View>
@@ -36,7 +36,7 @@ export default function StartMeeting({
           keyboardType="numeric"
           placeholder="Enter name"
           placeholderTextColor="#767476"
-          onChange={(text) => setRoomId(text)}
+          onChangeText={(text) => setRoomId(text)}
         />
       </View>
 
