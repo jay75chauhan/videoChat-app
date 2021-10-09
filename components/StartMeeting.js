@@ -34,14 +34,14 @@ export default function StartMeeting({
           style={tw`text-xl text-white`}
           value={roomId}
           keyboardType="numeric"
-          placeholder="Enter name"
+          placeholder="Enter ID"
           placeholderTextColor="#767476"
           onChangeText={(text) => setRoomId(text)}
         />
       </View>
 
       <TouchableOpacity
-        onPress={() => joinRoom()}
+        onPress={() => roomId !== undefined && joinRoom()}
         style={tw`items-center mt-16 bg-blue-500 rounded-3xl py-3 mx-20`}
       >
         <Text style={tw`text-2xl text-white `}>Start Meeting</Text>
